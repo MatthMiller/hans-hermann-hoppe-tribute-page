@@ -1,0 +1,77 @@
+.work-bg {
+    margin-top: 140px;
+    background-color: #050505;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.work h2 {
+    display: block;
+    color: #EBEBEB;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 23px; /* -3 px em relação ao antigo */
+    line-height: 23px; /* -3 px em relação ao antigo */
+}
+
+.work h2:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    background: #EBEBEB;
+    margin-top: 4px;
+    transition: 300ms; /* ou 0.3s */
+}
+
+.work ul {
+    margin-top: 42px;
+}
+
+.work li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #EBEBEB;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+
+    top: 8px;
+    left: -20px;
+}
+
+.work li:not(li:nth-child(1)) {
+    margin-top: 20px;
+}
+
+.work li {
+    color: #B3B3B3;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 22px;
+
+    position: relative;
+    margin-left: 20px;
+}
+
+.work li .work-name {
+    font-style: italic;
+    color: #EBEBEB;
+}
+
+.second-work-h2 {
+    margin-top: 60px;
+}
+
+@media (max-width: 825px) {
+    .work-bg {
+        margin-top: 50px;
+    }
+}

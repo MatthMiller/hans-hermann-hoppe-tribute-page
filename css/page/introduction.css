@@ -1,0 +1,129 @@
+.introduction {
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 62px;
+}
+
+.intro-info h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 34px;
+    color: #F5F5F5;
+    text-align: right;
+}
+
+.intro-info h2 {
+    margin-top: 15px;
+
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    text-align: right;
+    color: #CCCCCC;
+}
+
+.intro-info p {
+    margin-top: 60px;
+    position: relative;
+
+    font-size: 22px;
+    line-height: 28px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    color: #EBEBEB;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-info p span {
+    color: #B3B3B3;
+}
+
+.intro-info p::before {
+    content: '“';
+    position: absolute;
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 800;
+    color: #383838;
+    top: -20px;
+    left: -20px;
+}
+
+.intro-info p::after {
+    content: '”';
+    position: absolute;
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 800;
+    color: #383838;
+    right: -10px;
+    bottom: -30px;
+}
+
+
+.introduction img {
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.separator-intro {
+    display: grid;
+    margin: 0 auto;
+    max-width: 962px;
+    background-color: #F5F5F5;
+    height: 2px;
+}
+
+@media (max-width: 825px) {
+    section.container.introduction {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    .intro-info h1 {
+        text-align: left;
+    }
+
+    .intro-info h2 {
+        text-align: left;
+    }
+
+    .introduction {
+        gap: 31px;
+        
+    }
+
+    .intro-info p::before {
+        top: -25px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    section.container.introduction {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .introduction {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .intro-info {
+        order: 2;
+    }
+
+    .introduction img {
+        order: 1;
+        place-self: center;
+        border-radius: 4px 4px 4px 4px;
+    }
+}

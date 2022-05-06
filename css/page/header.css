@@ -1,0 +1,83 @@
+.header {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 45px;
+}
+
+.header nav a {
+    display: inline-block;
+    position: relative;
+    
+    font-family: 'PT Serif', serif;
+    color: #CCCCCC;
+    font-size: 20px;
+    padding: 4px;
+    line-height: 20px;
+    transition: 0.2s;
+}
+
+
+.header nav a:after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%; /* Pega a largura do elemento pai (tamanho do conteúdo) */
+    background: #F5F5F5;
+    margin-top: 4px;
+    transition: 300ms; /* ou 0.3s */
+}
+
+.header nav a:hover {
+    color: #F5F5F5;
+}
+
+.header nav a:hover::after {
+    width: 70%;
+    /* transition também poderia ser usado aqui */
+}
+
+@media (max-width: 825px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header a[href^="http://"] {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .header nav {
+        gap: 50px;
+        order: 2;
+        justify-content: center;
+    }
+
+    .header nav a {
+        padding: 14px 18px;
+        background-color: #212121;
+        border-radius: 4px;
+    }
+
+    .header nav a:hover::after {
+        display: none;
+    }
+
+    .header nav img {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .header nav {
+        gap: 15px;
+    }
+}

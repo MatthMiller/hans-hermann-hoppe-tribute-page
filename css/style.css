@@ -1,0 +1,8 @@
+@import "./global/global.css";
+@import "./global/components.css";
+
+@import "./page/header.css";
+@import "./page/introduction.css";
+@import "./page/pfs-about.css";
+@import "./page/work.css";
+@import "./page/footer-contact.css";

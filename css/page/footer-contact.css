@@ -1,0 +1,51 @@
+.contact h2 {
+    margin-top: 50px;
+
+    display: block;
+    color: #EBEBEB;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 23px; /* -3 px em relação ao antigo */
+    line-height: 23px; /* -3 px em relação ao antigo */
+}
+
+.contact h2:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    background: #EBEBEB;
+    margin-top: 4px;
+    transition: 300ms; /* ou 0.3s */
+}
+
+.contact .email,
+.contact .contact-info {
+    color: #B3B3B3;
+    font-family: 'EB Garamond', serif;
+}
+
+.contact .email {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 42px;
+}
+
+.contact .email a {
+    text-decoration: underline;
+    color: #EBEBEB;
+    transition: 200ms;
+}
+
+.contact .email a:hover {
+    color: #0356CD;
+}
+
+.contact .contact-info {
+    margin-top: 20px;
+
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}

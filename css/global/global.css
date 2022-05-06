@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #111111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Faz com que herde a cor do pai */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+dd,
+ul,
+blockquote {
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
