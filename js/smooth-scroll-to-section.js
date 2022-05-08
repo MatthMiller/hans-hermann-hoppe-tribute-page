@@ -1,7 +1,7 @@
 const internalLinks = document.querySelectorAll('.js-menu a[href^="#"');
 
 if(internalLinks.length) {
-    function ScrollToSection(event) {
+    function scrollToSection(event) {
         event.preventDefault();
         const href = this.getAttribute('href');
         const targetSection = document.querySelector(href);
@@ -12,6 +12,6 @@ if(internalLinks.length) {
     }
     
     internalLinks.forEach((actualLink) => {
-        actualLink.addEventListener('click', ScrollToSection);
+        actualLink.addEventListener('click', scrollToSection);
     });   
 }
